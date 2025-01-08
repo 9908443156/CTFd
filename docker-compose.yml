@@ -51,7 +51,7 @@ services:
     command: [mysqld, --character-set-server=utf8mb4, --collation-server=utf8mb4_unicode_ci, --wait_timeout=28800, --log-warnings=0]
 
   cache:
-    image: redis:4
+    image: redis:latest
     restart: always
     volumes:
     - .data/redis:/data
